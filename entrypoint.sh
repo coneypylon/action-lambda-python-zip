@@ -9,7 +9,7 @@ configure_aws_credentials(){
 install_zip_dependencies(){
 	echo "Installing and zipping dependencies..."
 	mkdir python
-	pip install --platform "${INPUT_PLATFORM}" --target=python -r "${INPUT_REQUIREMENTS_TXT}"
+	pip install --platform "${INPUT_PLATFORM}" --target=python -r "${INPUT_REQUIREMENTS_TXT}" --only-binary=:all:
 	zip -r dependencies.zip ./python
 }
 
