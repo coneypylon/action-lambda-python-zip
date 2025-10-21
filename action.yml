@@ -2,6 +2,13 @@ name: AWS Lambda Zip Deploy - Python
 author: Qubitro
 description: Zip deploy to AWS Lambda with requirements in a separate layer.
 inputs:
+  platform:
+    description: the platform that pip should build/retrieve for
+    required: true
+  lambda_region:
+    description: the region of your lambda
+    required: true
+    default: 'ca-central-1'
   requirements_txt:
     description: the name/path to the requirements.txt file
     required: true
