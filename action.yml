@@ -20,6 +20,7 @@ runs:
     - ${{ inputs.lambda_layer_arn }}
     - ${{ inputs.lambda_function_name }}
     - ${{ inputs.lambda_region }}
+    - ${{ inputs.platform }}
 branding:
   icon: 'cloud-lightning'
   color: 'white'
