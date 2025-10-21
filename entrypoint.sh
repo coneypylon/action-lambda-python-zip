@@ -37,6 +37,7 @@ deploy_lambda_function(){
 	install_zip_dependencies
 	publish_dependencies_as_layer
 	publish_function_code
+	sleep 5
 	update_function_layers
 }
 
